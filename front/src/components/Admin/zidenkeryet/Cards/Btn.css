@@ -1,0 +1,63 @@
+.card button {
+    
+    width: 141px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #666;
+    box-shadow: 0 6px 6px #06f;
+    outline: none;
+  }
+ button:active {
+    /* set time duration to your needs */
+    animation: gradient 100ms;
+    background: rgb(7, 7, 45);
+    color: #fff;
+    box-shadow: none;
+  }
+  .button-close {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    color: #a1905d;
+    border: 1px solid #a1905d;
+    margin: 100px auto;
+    outline: none;
+ }
+  .button-close:hover:before {
+    width: 15px;
+ }
+  .button-close:hover:after {
+    width: 15px;
+ }
+  .button-close:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 1px;
+    border-left: 8px solid currentColor;
+    border-right: 8px solid currentColor;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+  .button-close:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 1px;
+    border-left: 8px solid currentColor;
+    border-right: 8px solid currentColor;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+ 
+  
